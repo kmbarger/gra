@@ -1,0 +1,150 @@
+/******************************************/
+             /* Main Page */
+/*****************************************/
+
+/*******************/
+/* header settings */
+/*******************/
+
+#header-wrapper
+{
+  font-family: 'Archivo', sans-serif;
+}
+#name-bar ul
+{
+  padding-right: 30px;
+}
+#name-bar li a
+{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+}
+/*
+.txt-rotate{
+  position: relative;
+  font-family: 'Archivo', sans-serif;
+  font-size: 15px;
+  margin-left: 180px;
+}*/
+#nav-bar mark
+{
+  color: white;
+  background-color: black;
+}
+#navbar ul
+{
+  margin: 0;
+  padding: 0;
+}
+#nav-bar li a
+{
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+li
+{
+  list-style-type: none;
+}
+
+/****************/
+/* line divider */
+/****************/
+
+.line1 {
+  border-left: 2px solid black;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 50px;
+}
+
+/*********************/
+/* projects settings */
+/*********************/
+
+#studio-wrapper
+{
+  padding-top: 120px;
+}
+section {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+}
+.column {
+  margin: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+section:nth-of-type(5) .column:first-of-type {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 22px;
+}
+section:nth-of-type(6) .column:nth-of-type(2) {
+  flex-grow: 4;
+  flex-shrink: 4;
+  flex-basis: 66px;
+}
+
+/* OTHER STYLES */
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+}
+.column {
+  padding: 10px 0;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+/*************************/
+/* projects box settings */
+/*************************/
+
+#studio-wrapper img
+{
+  width: 55%;
+}
+.project-text
+{
+  font-size: 15px;
+}
+.column mark
+{
+  background-color: transparent;
+}
+.column:hover mark
+{
+  color: white;
+  background-color: black;
+}
+
+/***************/
+/* page footer */
+/***************/
+
+#social-media-links
+{
+  float: right;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+#social-media-links img
+{
+  width: 3%;
+  padding-right: 20px;
+}
