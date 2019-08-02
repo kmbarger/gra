@@ -1,0 +1,467 @@
+/********************/
+/* general settings */
+/********************/
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: black;
+}
+body {
+  font-family: 'Archivo', sans-serif;
+  color: white;
+  padding: 50px;
+}
+.column {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*******************/
+/* header settings */
+/*******************/
+
+#header-wrapper
+{
+  font-family: 'Archivo', sans-serif;
+}
+/*"McCall Barger" logo on left*/
+#name-bar ul
+{
+  padding-right: 30px;
+}
+#name-bar li a
+{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 18px;
+}
+/*navigation bar on right*/
+#nav-bar mark
+{
+  /*highlights navigation text on each page*/
+  color: black;
+  background-color: white;
+}
+#navbar ul
+{
+  margin: 0;
+  padding: 0;
+}
+#nav-bar li a
+{
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  color: white;
+  font-size: 18px;
+}
+li
+{
+  list-style-type: none;
+}
+
+/****************/
+/* line divider */
+/****************/
+
+.line1 {
+  /*line divides navigation bar*/
+  border-left: 1px solid white;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 80px;
+}
+#col-divider {
+  /*line divides columns on info page*/
+  border-bottom: 1px solid white;
+  position: relative;
+}
+
+/*************************/
+/* project grid settings */
+/*************************/
+
+#studio-wrapper
+{
+  padding-top: 100px;
+}
+section {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+}
+.column {
+  margin: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+/************************/
+/* project box settings */
+/************************/
+
+#studio-wrapper img
+{
+  width: 60%;
+}
+.project-text
+{
+  font-size: 16px;
+}
+.column mark
+{
+  background-color: transparent;
+}
+.column:hover mark
+{
+  color: white;
+  background-color: black;
+}
+.column:hover img
+{
+  filter: invert(100%);
+}
+.column:hover #process-img-wrapper img{
+  filter: invert(0%);
+}
+
+/*****************/
+/* image effects */
+/*****************/
+/*sets images to flash on mouse hover*/
+
+@-webkit-keyframes flash {
+ 0% { opacity: .3; }
+ 100% { opacity: 1; }
+}
+@keyframes flash {
+ 0% { opacity: .3; }
+ 100% { opacity: 1; }
+}
+.flash:hover {
+ opacity: 1;
+ -webkit-animation: flash 1s;
+ animation: flash 1s;
+}
+
+/*************************/
+/* process page settings */
+/*************************/
+
+#process-wrapper
+{
+  padding-top: 100px;
+}
+#process-img-wrapper {
+  display: inline-block;
+  max-width: 70vw;
+}
+
+/***********************/
+/* expand box settings */
+/***********************/
+.expand-collapse {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.expand-collapse p {
+  background-color: white;
+  padding: 20px;
+  margin: 0;
+  max-width: 35vw;
+}
+.expand-collapse div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: -2px 0 0 0;
+}
+.expand-collapse h3 {
+  box-sizing: border-box;
+  border: solid black 0.6px;
+  background-color: white;
+  color: black;
+  cursor:  pointer;
+  padding: 20px;
+  margin: 0 0 2px;
+  font-size: 15px;
+  font-weight: 100;
+}
+.expand-collapse h3:hover {
+  background-color: black;
+  color: white;
+}
+.expand-collapse img {
+  width: 5.5vw;
+  position: relative;
+}
+.expand-collapse:hover img {
+  filter: invert(0%);
+}
+
+/**********************/
+/* info page settings */
+/**********************/
+#info-wrapper
+{
+  padding-top: 90px;
+}
+#intro-text {
+  font-size: 3vw;
+  text-align: left;
+  margin: 0;
+}
+#welcome-text {
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  max-width: 950px;
+}
+#contact-text {
+  font-size: 4vw;
+  text-align: left;
+  margin: 0;
+}
+#info-wrapper #section2 {
+  position: relative;
+  padding-top: 150px;
+}
+
+/***************/
+/* page footer */
+/***************/
+
+.fab {
+  padding: 5px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 25px;
+  width: 5vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fab:hover {
+    opacity: 0.5;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-behance {
+  color: white;
+}
+.fa-artstation {
+  color: white;
+}
+
+/**************************/
+/* fade text up animation */
+/**************************/
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+.animatedFadeInUp {
+  opacity: 0
+}
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/*****************************/
+/* typewriter text animation */
+/*****************************/
+
+@keyframes typing {
+  from { width: 100% }
+  to { width: 0 }
+}
+.container {
+  position: relative;
+}
+.typing {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: -1;
+}
+.hiders {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hiders p {
+  position: relative;
+  clear: both;
+  margin: 0;
+  float: right; /* left-to-right */
+  width: 0; /* degradation: if animation doesn't work, these are invisible by default */
+  background: black; /* same as page background */
+  animation: typing 2s steps(30, end);
+  animation-fill-mode: both;  /* load first keyframe on page load, leave on last frame at end */
+}
+.hiders p:nth-child(2) {
+  animation-delay: 2s;
+}
+.hiders p:nth-child(3) {
+  animation-delay: 4s;
+}
+.hiders p:nth-child(4) {
+  animation-delay: 6s;
+}
+.hiders p:nth-child(5) {
+  animation-delay: 8s;
+}
+
+/******************/
+/*Media Adjustment*/
+/******************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .expand-collapse img {
+    width: 20vw;
+    position: relative;
+    }
+    #info-wrapper
+    {
+      padding-top: 70px;
+    }
+    #welcome-text {
+      font-size: 6vw;
+      font-weight: bold;
+      text-align: left;
+      margin: 0;
+      max-width: 950px;
+    }
+    #info-wrapper #section2 {
+      position: relative;
+      padding-top: 120px;
+    }
+    .expand-collapse p {
+      background-color: white;
+      text-align: left;
+      padding: 20px;
+      margin: 0;
+      max-width: 55vw;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .expand-collapse img {
+    width: 20vw;
+    position: relative;
+    }
+    #info-wrapper
+    {
+      padding-top: 70px;
+    }
+    #welcome-text {
+      font-size: 6vw;
+      font-weight: bold;
+      text-align: left;
+      margin: 0;
+      max-width: 950px;
+    }
+    #info-wrapper #section2 {
+      position: relative;
+      padding-top: 150px;
+    }
+    .expand-collapse p {
+      background-color: white;
+      text-align: left;
+      padding: 20px;
+      margin: 0;
+      max-width: 45vw;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .expand-collapse img {
+    width: 6.5vw;
+    position: relative;
+    }
+    #info-wrapper
+    {
+      padding-top: 90px;
+    }
+    #welcome-text {
+      font-size: 5vw;
+      font-weight: bold;
+      text-align: left;
+      margin: 0;
+      max-width: 950px;
+    }
+    #info-wrapper #section2 {
+      position: relative;
+      padding-top: 150px;
+    }
+    .expand-collapse p {
+      background-color: white;
+      text-align: left;
+      padding: 20px;
+      margin: 0;
+      max-width: 38vw;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .expand-collapse img {
+    width: 5.5vw;
+    position: relative;
+    }
+    #info-wrapper
+    {
+      padding-top: 90px;
+    }
+    #welcome-text {
+      font-size: 4vw;
+      font-weight: bold;
+      text-align: left;
+      margin: 0;
+      max-width: 950px;
+    }
+    #info-wrapper #section2 {
+      position: relative;
+      padding-top: 150px;
+    }
+    .expand-collapse p {
+      background-color: white;
+      text-align: left;
+      padding: 20px;
+      margin: 0;
+      max-width: 38vw;
+    }
+}
