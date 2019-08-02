@@ -1,0 +1,137 @@
+/******************************************/
+             /* Home Page */
+/*****************************************/
+
+/********************/
+/* general settings */
+/********************/
+
+body
+{
+  margin: 0 auto;
+}
+a
+{
+  text-decoration: none;
+  color: gray;
+}
+a:hover
+{
+  color: black;
+  transition: color 0.5s ease;
+}
+
+/****************************/
+/* vertical menu settings */
+/****************************/
+
+.vertical-menu
+{
+  display: block;
+  height: 30px;
+  padding-top: 70px;
+  padding-left: 80px;
+
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.menu-links
+{
+  padding-bottom: 10px;
+  top: 5px;
+}
+
+/****************/
+/* welcome text */
+/****************/
+
+.text-box-1
+{
+  width: 300px;
+  bottom: -40px;
+  left: -50px;
+  padding: 0;
+  line-height: 50px;
+
+  font-family: 'Questrial', sans-serif;
+  font-size: 35px;
+  position: fixed;
+}
+.text-box-2
+{
+  width: 300px;
+  top: -40px;
+  right: -30px;
+  padding: 0;
+  line-height: 50px;
+
+  text-align: right;
+  font-family: 'Questrial', sans-serif;
+  font-size: 35px;
+  position: fixed;
+}
+
+/******************/
+/* vertical lines */
+/******************/
+
+.vertical-line-1
+{
+  border-left: 0.8px solid gray;
+  height: 600px;
+  position: fixed;
+  left: 7%;
+  margin-left: -3px;
+  top: 25%;
+}
+.vertical-line-2
+{
+  border-left: 0.8px solid gray;
+  height: 75px;
+  position: fixed;
+  left: 7%;
+  margin-left: -3px;
+  top: 0;
+}
+
+/*******************/
+/* image animation */
+/*******************/
+
+#img-wrap
+{
+  margin-top: -20px;
+  margin-left: 40px;
+  margin-right: 55px;
+}
+.img-container
+{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.image
+{
+  width: 400px;
+  margin: auto;
+}
+
+/*******************/
+/* image animation */
+/*******************/
+
+#arrow-wrap
+{
+  margin-top: 80px;
+  margin-left: 950px;
+}
+.arrow
+{
+  position: fixed;
+
+  width: 10%;
+  height: auto;
+}
