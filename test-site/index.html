@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>gra598 page</title>
+    <link rel="stylesheet" href="css/global.css">
+    <!--------->
+    <!--fonts-->
+    <!--------->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!----------------->
+    <!--vertical menu-->
+    <!----------------->
+    <div id="menu-wrap">
+      <ul class="vertical-menu">
+        <li class="menu-links"><a href="index.html">01 &emsp; welcome!</a></li>
+        <li class="menu-links"><a href="portfolio.html">02 &emsp; what i do</a></li>
+        <li class="menu-links"><a href="#">03 &emsp; who am i?</a></li>
+      </ul>
+    </div>
+    <!---------------->
+    <!--welcome text-->
+    <!---------------->
+    <div id="text-wrap" style="display: none;">
+      <div id="text-1" class="text-box-1">
+        <p>
+          this is my online portfolio. here you can find examples of my studio work and design school assignments.
+        </p>
+      </div>
+      <div id="text-2" class="text-box-2">
+        <p>
+          this is my online portfolio. here you can find examples of my studio work and design school assignments.
+        </p>
+      </div>
+    </div>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script type = "text/javascript" language = "javascript">
+      $(document).ready(function() {
+        $('#text-wrap').delay(500).fadeIn(3000);
+        $('.text-boxes').click(function(event) {
+          event.preventDefault();
+          var newLocation = this.href;
+          $('#text-wrap').fadeOut(1000, function () {
+            window.location = newLocation;
+          });
+        });
+      });
+    </script>
+    <!------------------>
+    <!--vertical lines-->
+    <!------------------>
+    <div class="vertical-line-1"></div>
+    <div class="vertical-line-2"></div>
+    <!------------------->
+    <!--image animation-->
+    <!------------------->
+    <div id="img-wrap" style="display: none">
+      <div class="img-container">
+        <img class="image" src="img/website-image-3.png" alt="">
+      </div>
+    </div>
+    <script type = "text/javascript" language = "javascript">
+      $(document).ready(function() {
+        $('#img-wrap').delay(500).fadeIn(500);
+        $('.img-container').click(function(event) {
+          event.preventDefault();
+          var newLocation = this.href;
+          $('#img-wrap').fadeOut(1000, function () {
+            window.location = newLocation;
+          });
+        });
+      });
+    </script>
+    <!------------------->
+    <!--arrow animation-->
+    <!------------------->
+    <div id="arrow-wrap" style="display: none">
+      <div class="arrow-container">
+        <img class="arrow" src="img/scroll-down-arrow.png" alt="">
+      </div>
+    </div>
+    <script type = "text/javascript" language = "javascript">
+      $(document).ready(function() {
+        $('#arrow-wrap').delay(500).fadeIn(5000);
+        $('.arrow-container').click(function(event) {
+          event.preventDefault();
+          var newLocation = this.href;
+          $('#arrow-wrap').fadeOut(1000, function () {
+            window.location = newLocation;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
