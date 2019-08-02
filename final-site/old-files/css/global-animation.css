@@ -1,0 +1,174 @@
+/******************************************/
+             /* Main Page */
+/*****************************************/
+
+/*******************/
+/* header settings */
+/*******************/
+
+#header-wrapper
+{
+  font-family: 'Archivo', sans-serif;
+}
+#name-bar ul
+{
+  padding-right: 30px;
+}
+#name-bar li a
+{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 23px;
+}
+/*
+.txt-rotate{
+  position: relative;
+  font-family: 'Archivo', sans-serif;
+  font-size: 15px;
+  margin-left: 180px;
+}*/
+#nav-bar mark
+{
+  color: white;
+  background-color: black;
+}
+#navbar ul
+{
+  margin: 0;
+  padding: 0;
+}
+#nav-bar li a
+{
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  color: black;
+  font-size: 20px;
+}
+li
+{
+  list-style-type: none;
+}
+
+/****************/
+/* line divider */
+/****************/
+
+.line1 {
+  border-left: 2px solid black;
+  height: 280px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 50px;
+}
+
+/*************************/
+/* project grid settings */
+/*************************/
+
+#studio-wrapper
+{
+  padding-top: 130px;
+}
+section {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+}
+.column {
+  margin: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.footer-column {
+  margin: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+/* OTHER STYLES */
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+}
+.column {
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-column {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/************************/
+/* project box settings */
+/************************/
+
+#studio-wrapper img
+{
+  width: 55%;
+}
+.project-text
+{
+  font-size: 15px;
+}
+.column mark
+{
+  background-color: transparent;
+}
+.column:hover mark
+{
+  color: white;
+  background-color: black;
+}
+.column:hover img
+{
+  filter: invert(100%);
+}
+
+/*****************/
+/* image effects */
+/*****************/
+
+@-webkit-keyframes flash {
+ 0% { opacity: .3; }
+ 100% { opacity: 1; }
+}
+@keyframes flash {
+ 0% { opacity: .3; }
+ 100% { opacity: 1; }
+}
+.flash:hover {
+ opacity: 1;
+ -webkit-animation: flash 1s;
+ animation: flash 1s;
+}
+
+/***************/
+/* page footer */
+/***************/
+
+#social-media-links
+{
+  float: right;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+#social-media-links img
+{
+  width: 3%;
+  padding-right: 20px;
+}
