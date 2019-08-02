@@ -1,0 +1,232 @@
+/*general settings*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+}
+
+/* header settings */
+.header
+{
+  font-family: 'Archivo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 40px;
+}
+#name-bar li a
+{
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 23px;
+}
+#nav-bar mark
+{
+  color: white;
+  background-color: black;
+}
+#nav-bar li a
+{
+  text-decoration: none;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 20px;
+}
+li
+{
+  list-style-type: none;
+}
+
+/* line divider */
+.line1 {
+  border-left: 1px solid black;
+  height: 240px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 50px;
+}
+
+/* card box settings */
+.wrapper {
+  padding: 15px;
+  padding-top: 110px;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+section img {
+  width: 70%;
+}
+.column .social-media img {
+  width: 20%;
+}
+.column {
+  max-width: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.column:hover .flash
+{
+  filter: invert(100%);
+}
+.card {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover .card__inner {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.card__inner {
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.cardtext {
+  font-size: 18px;
+}
+.card__inner:after {
+  transition: all 0.3s ease-in-out;
+}
+.card__expander {
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+.card .card__expander p {
+  font-size: 15px;
+  max-width: 150px;
+}
+.card.is-collapsed .card__inner:after {
+  content: "";
+  opacity: 0;
+}
+.card.is-collapsed .card__expander {
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 0;
+}
+.card.is-expanded .card__inner img{
+  filter: invert(100%);
+}
+.card.is-expanded .card__inner mark{
+  color: white;
+  background-color: black;
+}
+.card.is-expanded .card__inner:after {
+  content: "";
+  opacity: 1;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 15px);
+}
+.card.is-expanded .card__expander {
+  max-height: 600px;
+  min-height: 200px;
+  overflow: visible;
+  margin-top: 10px;
+  opacity: 1;
+}
+.card.is-expanded:hover .card__inner {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.card.is-inactive .card__inner {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.card.is-inactive:hover .card__inner {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.card__expander{
+  width: 100%;
+
+}
+
+/* project box settings */
+.column mark
+{
+  background-color: transparent;
+}
+.column:hover mark
+{
+  color: white;
+  background-color: black;
+}
+
+/* image effects */
+@-webkit-keyframes flash {
+ 0% { opacity: .3; }
+ 100% { opacity: 1; }
+}
+@keyframes flash {
+ 0% { opacity: .3; }
+ 100% { opacity: 1; }
+}
+.flash:hover {
+ opacity: 1;
+ -webkit-animation: flash 1s;
+ animation: flash 1s;
+}
+
+/*
+@media screen and (min-width: 992px) {
+  .card:nth-of-type(3n+2) .card__expander {
+    margin-left: calc(-100% - 30px);
+  }
+
+  .card:nth-of-type(3n+3) .card__expander {
+    margin-left: calc(-200% - 60px);
+  }
+
+  .card:nth-of-type(3n+4) {
+    clear: left;
+  }
+
+  .card__expander {
+    width: calc(300% + 60px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card:nth-of-type(2n+2) .card__expander {
+    margin-left: calc(-100% - 30px);
+  }
+
+  .card:nth-of-type(2n+3) {
+    clear: left;
+  }
+
+  .card__expander {
+    width: calc(200% + 30px);
+  }
+}*/
