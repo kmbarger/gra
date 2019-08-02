@@ -1,0 +1,110 @@
+/*general settings*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+}
+
+/* header settings */
+.header
+{
+  font-family: 'Archivo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 40px;
+}
+#name-bar li a
+{
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 23px;
+}
+#nav-bar mark
+{
+  color: white;
+  background-color: black;
+}
+#nav-bar li a
+{
+  text-decoration: none;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 20px;
+}
+li
+{
+  list-style-type: none;
+}
+
+/* line divider */
+.line1 {
+  border-left: 2px solid black;
+  height: 280px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 50px;
+}
+
+/* text settings */
+.text-section {
+  align-items: center;
+  justify-content: center;
+}
+#hello-text
+{
+  font-size: 22vw;
+  font-family: 'Ramabhadra', sans-serif;
+  line-height: 90%;
+}
+#introduction-text
+{
+  font-size: 4vw;
+  font-family: 'Ramabhadra', sans-serif;
+  line-height: 150%;
+}
+
+/* card box settings */
+.wrapper {
+  padding: 15px;
+  padding-top: 150px;
+}
+section {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+}
+section img {
+  width: 60%;
+}
+.column {
+  max-width: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.column:hover img
+{
+  filter: invert(100%);
+}
+
+/* project box settings */
+#wrapper img
+{
+  width: 55%;
+}
+.column mark
+{
+  background-color: transparent;
+}
+.column:hover mark
+{
+  color: white;
+  background-color: black;
+}
